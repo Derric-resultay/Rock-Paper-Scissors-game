@@ -8,3 +8,8 @@ function getComputerChoice() {
     else return "scissors"
 }
 console.log(getComputerChoice());
+// create a function that will return a human choice
+function getHumanChoice() {
+    return prompt("Enter your choice(rock, paper, scissors): ")
+}
+console.log(getHumanChoice());
