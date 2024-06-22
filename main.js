@@ -13,3 +13,6 @@ function getHumanChoice() {
     return prompt("Enter your choice(rock, paper, scissors): ")
 }
 console.log(getHumanChoice());
+// create a record that will record the humam or computer score
+let humanScore = 0;
+let computerScore = 0;
