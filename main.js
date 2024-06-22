@@ -16,6 +16,10 @@ function getHumanChoice() {
 let humanScore = 0;
 let computerScore = 0;
 
+// make the playRound plays in 5 times
+function playGame() {
+
+
 
 
 // create playground that'll play single round
@@ -65,3 +69,9 @@ const computerSelection = getComputerChoice();
 console.log(playRound(humanSelection, computerSelection));
 console.log("Your score: " + humanScore);
 console.log("Computer score: " + computerScore);
+}
+let play = 1;
+while(play <= 5) {
+    playGame();
+    play++;
+}
