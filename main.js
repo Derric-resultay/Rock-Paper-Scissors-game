@@ -26,40 +26,40 @@ function playGame() {
 function playRound(humanChoice, computerChoice) {
     if (humanChoice.toLowerCase() == "rock") {
         if(computerChoice == "rock")
-            return console.log("Draw.")
+            return "Draw."
 
         else if(computerChoice == "paper") {
-            alert("Computer wins.")
+            return "Computer wins."
             computerScore++
         } 
         else if(computerChoice == "scisssors") {
-            alert("You win! Rock beats scissors.")
+            return "You win! Rock beats scissors."
             humanScore++
         }
     }
     else if(humanChoice.toLowerCase() == "paper") {
         if(computerChoice == "rock") {
-            alert("You win! Paper beats rock.")
+            return "You win! Paper beats rock."
             humanScore++
         }
         else if(computerChoice == "paper")
-            return console.log("Draw.")
+            return "Draw."
         else if(computerChoice == "scisssors") {
-            alert("Computer wins.")
+            return "Computer wins."
             computerScore++
         }
     }
     else if(humanChoice.toLowerCase() == "scissors") {
         if(computerChoice == "rock"){
-            alert("Computer wins.")
+            return "Computer wins."
             computerScore++
         }
         else if(computerChoice == "paper"){
-            alert("You win! Scissors beats paper.")
+            return "You win! Scissors beats paper."
             humanScore++
         }
         else if(computerChoice == "scisssors")
-            return console.log("Draw.")
+            return "Draw."
     }
 }
 
